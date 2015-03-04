@@ -1,5 +1,6 @@
 {
     "name": "aavrug/sheets",
+    "type" : "cakephp-plugin",
     "description": "This creates static pages.",
     "keywords": ["sheet","sheets"],
     "homepage": "http://github.com/aavrug/Sheets",
@@ -11,11 +12,15 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "cakephp/cakephp": "3.0.*-dev"
     },
     "autoload": {
         "psr-4": {
             "Sheets\\": "src"
         }
+    },
+    "extra": {
+        "installer-name": "Sheets"
     }
 }
